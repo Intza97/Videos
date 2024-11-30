@@ -1,55 +1,54 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
+<html lang="es">
+<head>
   <!--==================== METADATOS ====================-->
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="description" content="Videos">
-      <meta name="keywords" content="HTML-CSS-JS">
-      <meta name="author" content="Rocio Cuello">
-      
-      <!--==================== CSS ====================-->
-      <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Videos">
+  <meta name="keywords" content="HTML-CSS-JS">
+  <meta name="author" content="Rocio Cuello">
 
-      <!--==================== TITULO ====================-->
-      <title>Videos | Video Player </title>
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="assets/css/style.css">
 
-      <!--==================== ICONO DE PESTAÑA ====================-->
-      <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
+  <!--==================== TITULO ====================-->
+  <title>Videos | Video Player </title>
 
-            <!--==================== ICONOS ====================-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    </head>
+  <!--==================== ICONO DE PESTAÑA ====================-->
+  <link rel="icon" sizes="64x64" href="assets/img/favicon.webp"> 
 
-  <body>
-   <div class="btn">
-    <div class="play"></div>
-    <p>Play Video</p>
-   </div>
-   <div class="clip">
-    <video src="assets/video.mp4" controls autoplay></video>
-    <b class="close">Cerrar</b>
-   </div>
-       <!--==================== script ====================-->
-    <script>
-        let btn = document.querySelector('.btn');
-        let clip = document.querySelector('.clip');
-        let close = document.querySelector('.close');
-        let video = document.querySelector('video');
-        btn.onclick=function(){
-            btn.classList.add('active')
-           clip.classList.add('active')
-           video.play()
-           video.currentTime=0;
-        }
-        close.onclick=function(){
-            btn.classList.remove('active')
-           clip.classList.remove('active')
-           video.pause()
-        }
-    </script>
-  </body>
+  <!--==================== ICONOS ====================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+  <div class="btn">
+  <div class="play"></div>
+  <p>Play Video</p>
+  </div>
+  <div class="clip">
+  <video src="assets/video.mp4" controls autoplay></video>
+  <b class="close">Cerrar</b>
+  </div>
+  <!--==================== SCRIPT ====================-->
+  <script>
+      let btn = document.querySelector('.btn');
+      let clip = document.querySelector('.clip');
+      let close = document.querySelector('.close');
+      let video = document.querySelector('video');
+      btn.onclick=function(){
+          btn.classList.add('active')
+          clip.classList.add('active')
+          video.play()
+          video.currentTime=0;
+      }
+      close.onclick=function(){
+          btn.classList.remove('active')
+          clip.classList.remove('active')
+          video.pause()
+      }
+  </script>
+</body>
 </html>
